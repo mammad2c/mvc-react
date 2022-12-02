@@ -10,14 +10,14 @@ export class BaseController<IModel = Record<string, any>> {
 
   public index() {
     return useQuery<IModel[], Error>({
-      queryKey: ["Post.all"],
+      queryKey: [`${this.Model.modelName}.all`],
       queryFn: () => this.Model.all(),
     });
   }
 
   public show(id: number | string) {
     return useQuery<IModel, Error>({
-      queryKey: ["Post.find"],
+      queryKey: [`${this.Model.modelName}.find`, `${id}`],
       queryFn: () => this.Model.find(id),
     });
   }

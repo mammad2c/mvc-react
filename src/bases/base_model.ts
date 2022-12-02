@@ -2,6 +2,14 @@ import axios from "axios";
 
 export class BaseModel<T> {
   public resource = "";
+  public modelName: string;
+
+  /**
+   * @param {string} modelName -  modelName used for queryKey.
+   */
+  constructor(modelName: string) {
+    this.modelName = modelName;
+  }
 
   public async all() {
     const response = await axios<T[]>({
