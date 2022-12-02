@@ -1,10 +1,10 @@
-import { PostController } from "../controllers/posts_controller";
+import { PostsController } from "../controllers/posts_controller";
 
 export const PostView = () => {
-  const { data, isLoading, isError, error } = PostController.index();
+  const { data, isLoading, isError, error } = PostsController.index();
 
   const { counter, increaseCounter, decreaseCounter } =
-    PostController.handleCounter();
+    PostsController.handleCounter();
 
   if (isLoading) {
     return <div>loading ...</div>;

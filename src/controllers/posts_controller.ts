@@ -26,4 +26,4 @@ class Controller extends BaseController<PostSchema> {
   }
 }
 
-export const PostController = new Controller(new Post());
+export const PostsController = new Controller(new Post());
