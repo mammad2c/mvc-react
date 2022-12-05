@@ -1,5 +1,5 @@
 import { Link, Route, Routes } from "react-router-dom";
-import { PostView } from "./views/post_view";
+import { PostView } from "@/views/post_view";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 function App() {

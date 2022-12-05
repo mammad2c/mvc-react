@@ -1,4 +1,4 @@
-import { BaseModel } from "../bases/base_model";
+import { BaseModel } from "@/bases/base_model";
 
 export interface PostSchema {
   userId: number;

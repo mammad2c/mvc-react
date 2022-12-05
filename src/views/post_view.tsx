@@ -1,4 +1,4 @@
-import { PostsController } from "../controllers/posts_controller";
+import { PostsController } from "@/controllers/posts_controller";
 
 export const PostView = () => {
   const { data, isLoading, isError, error } = PostsController.index();

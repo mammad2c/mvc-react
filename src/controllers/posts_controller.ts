@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { BaseController } from "../bases/base_controller";
-import { PostSchema, Post } from "../models/post_model";
+import { BaseController } from "@/bases/base_controller";
+import { PostSchema, Post } from "@/models/post_model";
 
 class Controller extends BaseController<PostSchema> {
   constructor(model: Post) {
